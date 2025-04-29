@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+
+}
+body {
+  margin: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.navlink {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 60px;
+  border: 1px solid black;
+  justify-content: space-between;
+  background-color: rgb(125, 150, 135);
+
+  align-items: flex-start;
+}
+.navlink > a:hover {
+  color: red;
+}
+.addbtn{
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.addbtn:hover{
+  
+  background-color: rgb(100, 200, 140);
+  border-radius: 10px;
+}
+
+.addbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  top: 3rem;
+  margin: 1rem;
+}
+.createbox {
+  display: flex;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgb(125, 150, 135);
+  position: relative;
+  left: 22rem; /* has to edit this for different sizes.*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 50%;
+}
+.createbox > input,
+button {
+  width: 60%;
+  height: 2rem;
+  background-color: rgb(201, 212, 205);
+  color: black;
+  border-radius: 3px;
+}
+
+.toasting {
+  border: 1px solid black;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  left: 26rem;
+  top: 10rem;
+  border-radius: 8px;
+  background-color: rgb(125, 150, 135);
+  font-size: larger;
+}
+.itembox {
+  border-radius: 15px;
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(169, 174, 171);
+}
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+  gap:1rem;
+}
+.itembox:hover {
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.15);
+}
+.box {
+  position: relative;
+  top: 5rem;
+  gap: 5px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.deletionBox{
+  z-index: 1;
+ border-radius: 15px;
+  background-color: rgb(238, 50, 50);
+  width: 500px;
+  color:white;
+  padding: 25px;
+  height:6rem;
+  position: relative;
+  left: 30rem;
+}
+.form{
+  border: 1px solid black;
+  position: relative;
+  left:20rem;
+  top:10rem;
+  width: 50%;
+  height:350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ded6d6;
+}
+.loginbtn{
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 15px;
+  background-color: rgb(32, 193, 32);
+}
+.signupbtn{
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 15px;
+  background-color: rgb(97, 143, 229);
+}
+.loginbtn:hover{
+  color:white;
+}
+.signupbtn:hover{
+  color:white;
+}
+
+
+.heading{
+  font-size:x-large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+}
+.nobox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  left: 28rem;
+}
+.deletebtn:hover{
+  background-color: red;
+}
+.updatebtn:hover{
+  background-color: blue;
+}
+
+button:hover {
+  cursor: pointer;
+}
+.itemname,.itemprice{
+  width: 100%;
+ 
+}
+
+@media(max-width:800px){
+  .createbox{
+    position: relative;
+    left:8rem;
+  }
+ 
+}
