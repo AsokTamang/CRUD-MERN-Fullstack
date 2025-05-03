@@ -1,6 +1,6 @@
-import { FaSadCry } from 'react-icons/fa'
+
 import {create} from 'zustand'
-import { product } from '../../../backend/models/product.model'
+
 
 export const useProductStore=create((set)=>({
   products:[],
